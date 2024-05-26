@@ -23,7 +23,7 @@ class AppLayout extends StatefulWidget {
     this.leading,
     this.backgroundColor = AppColors.white,
     this.appbarShadowColor,
-    this.appBarColor = AppColors.green,
+    this.appBarColor = AppColors.orange,
     this.statusBarColor = AppColors.white,
     this.titleColor,
     this.bottomNavigationBar,
@@ -112,13 +112,13 @@ class _AppLayoutState extends State<AppLayout> with AfterLayoutMixin {
                     Icons.arrow_back_ios,
                     size: 23,
                     color: [
-                      AppColors.green,
-                      AppColors.darkgreen,
-                      AppColors.lightGreen,
+                      AppColors.blue,
+                      AppColors.bgBlue,
+                      AppColors.blue,
                       AppColors.accept
                     ].contains(widget.appBarColor)
                         ? AppColors.white
-                        : AppColors.green,
+                        : AppColors.white,
                   ),
                 );
           },
@@ -135,13 +135,13 @@ class _AppLayoutState extends State<AppLayout> with AfterLayoutMixin {
               color: widget.titleColor != null
                   ? widget.titleColor!
                   : [
-                      AppColors.green,
-                      AppColors.darkgreen,
-                      AppColors.lightGreen,
+                      AppColors.blue,
+                      AppColors.bgBlue,
+                      AppColors.blue,
                       AppColors.accept
                     ].contains(widget.appBarColor)
                       ? AppColors.white
-                      : AppColors.green,
+                      : AppColors.white,
             ),
         actions: widget.action,
       ),

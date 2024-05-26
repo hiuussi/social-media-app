@@ -48,8 +48,8 @@ class AppButton extends StatelessWidget {
                         begin: Alignment.topRight,
                         end: Alignment.bottomLeft,
                         colors: [
-                            AppColors.darkgreen,
-                            AppColors.green,
+                            AppColors.bgBlue,
+                            AppColors.blue,
                             AppColors.accept
                           ]),
             border:
