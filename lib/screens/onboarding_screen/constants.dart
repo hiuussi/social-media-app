@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 const kTitle1 = "Chào mừng";
-const kBodyText1 = "Bạn đã đến với SocialScape";
+const kBodyText1 = "Bạn đã đến với Social Society!";
 const kImageLogo = Image(
   image: AssetImage('assets/images/logo.png'),
   height: 170,
 );
-const kTitle2 = "Tìm kiếm bạn bè và chia sẻ sở thích";
-const kBodyText2 = "Mạng xã hội là nền tảng trực tuyến đưa bạn đến gần với bạn bè và cung cấp không gian để chia sẻ sở thích cá nhân";
-const kTitle3 = "Gặp gỡ những con người tuyệt vời và trò chuyện";
-const kBodyText3 = "Kết nối với những con người tuyệt vời và thảo luận về mọi thứ trên mạng xã hội";
+const kTitle2 = "Chia sẻ cuộc sống của bạn và nắm bắt xu hướng!";
+const kBodyText2 = "Nền tảng tuyệt vời để đưa bạn đến một không gian mà ở đó, bạn được là chính bạn!";
+const kTitle3 = "Gặp gỡ những người bạn mới và trò chuyện cùng nhau";
+const kBodyText3 = "Cùng kết nối và chia sẻ với những người bạn cùng chung sở thích";
