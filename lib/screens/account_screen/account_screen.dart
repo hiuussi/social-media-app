@@ -154,7 +154,7 @@ class AccountScreen extends StatelessWidget {
                                   padding: const EdgeInsets.all(4),
                                   borderRadius: BorderRadius.circular(100),
                                   child: Icon(Icons.camera_alt,
-                                      size: 28, color: AppColors.green)),
+                                      size: 28, color: AppColors.orange)),
                             ),
                           ),
                           InkWell(
@@ -219,7 +219,7 @@ class AccountScreen extends StatelessWidget {
                                                   BorderRadius.circular(100),
                                               child: Icon(Icons.camera_alt,
                                                   size: 28,
-                                                  color: AppColors.green)),
+                                                  color: AppColors.orange)),
                                         ))
                                   ],
                                 )),
@@ -292,7 +292,7 @@ class AccountScreen extends StatelessWidget {
                                         Get.toNamed(Routes.updateProfile);
                                       },
                                       icon: Icons.edit,
-                                      color: AppColors.darkgreen,
+                                      color: AppColors.bgBlue,
                                     )
                                   ],
                                 ),
@@ -336,7 +336,7 @@ class AccountScreen extends StatelessWidget {
                                             children: [
                                               Expanded(
                                                 child: AppText(
-                                                  "Bạn chưa có bài đăng nào!",
+                                                  "Hiện chưa có bài đăng nào!",
                                                   textAlign: TextAlign.center,
                                                   color: AppColors.titleText,
                                                   fontSize: 18,
