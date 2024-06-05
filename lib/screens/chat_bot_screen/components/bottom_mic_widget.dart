@@ -46,7 +46,7 @@ class BottomMicWidget extends StatelessWidget {
                       children: [
                         Image.asset(
                           'assets/images/voice-no-background.png',
-                          color: Colors.green,
+                          color: Colors.lightBlueAccent,
                         ),
                         Positioned.fill(
                           child: Row(

@@ -48,7 +48,7 @@ class ChatBubbleWidget extends StatelessWidget {
               child: Card(
                   margin: const EdgeInsets.only(bottom: 8, top: 8),
                   color: currentMessage.isSentByMe
-                      ? messageColor ?? const Color(0xFFCFFDE1)
+                      ? messageColor ?? const Color(0xFF94CCA4)
                       : openAiMessageColor ?? Colors.white,
                   elevation: 3,
                   shape: currentMessage.isSentByMe
@@ -88,7 +88,7 @@ class ChatBubbleWidget extends StatelessWidget {
                               height: 50,
                               width: 65,
                               child:
-                                  LoadingAnimation(color: Color(0xFF08875D))))),
+                                  LoadingAnimation(color: Color(0xFF5C936B))))),
             ))
         : Align(
             alignment: currentMessage.isSentByMe
@@ -105,7 +105,7 @@ class ChatBubbleWidget extends StatelessWidget {
                           top: 8,
                           left: !currentMessage.isSentByMe ? 26 : 0),
                       color: currentMessage.isSentByMe
-                          ? messageColor ?? const Color(0xFFCFFDE1)
+                          ? messageColor ?? const Color(0xFF94CCA4)
                           : openAiMessageColor ?? Colors.white,
                       elevation: 3,
                       shape: currentMessage.isSentByMe
@@ -168,10 +168,10 @@ class ChatBubbleWidget extends StatelessWidget {
                                   .then((value) {
                                 const snackBar = SnackBar(
                                   duration: Duration(seconds: 2),
-                                  backgroundColor: Color(0xFF08875D),
+                                  backgroundColor: Color(0xFF5C936B),
                                   showCloseIcon: true,
                                   content: Text(
-                                    'コピーに成功しました',
+                                    'COPY SUCCESSFUL !',
                                     style: TextStyle(
                                         color: Colors.white,
                                         fontWeight: FontWeight.w500,
