@@ -123,7 +123,7 @@ class CreatePostScreen extends StatelessWidget {
                 builder: (context, state) {
                   return AppLayout(
                     onWillPop: () => Future.value(true),
-                    title: "Bài Đăng",
+                    title: "Bài đăng",
                     useSafeArea: true,
                     action: [
                       AppIconButton(
@@ -183,8 +183,8 @@ class CreatePostScreen extends StatelessWidget {
                                                   .map((e) => GestureDetector(
                                                         onTap: e.onTap(context),
                                                         child: AppContainer(
-                                                          color: AppColors
-                                                              .lightGreen,
+                                                          color: const Color(
+                                                              0xFFB9D2FC),
                                                           padding:
                                                               const EdgeInsets
                                                                   .all(8),
@@ -241,7 +241,7 @@ class CreatePostScreen extends StatelessWidget {
                                               children: [
                                                 Expanded(
                                                   child: AppText(
-                                                    "Bạn đã đính kèm ${imageFile.length} tệp",
+                                                    "Bạn đã đính kèm tệp ${imageFile.length} ",
                                                     color: AppColors.darkgreen,
                                                     fontWeight: FontWeight.w500,
                                                   ),
@@ -295,13 +295,13 @@ class CreatePostScreen extends StatelessWidget {
                                     title: "Xóa bài đăng",
                                     width: MediaQuery.of(context).size.width,
                                     color: AppColors.background,
-                                    borderColor: AppColors.red,
-                                    titleColor: AppColors.red,
+                                    borderColor: const Color(0xFFF36060),
+                                    titleColor: const Color(0xFFF36060),
                                     onPressed: () {
                                       showConfirmDialog(context,
                                           title: "Xóa bài đăng",
                                           content:
-                                              "Bạn có chắc chắn muốn xóa bài đăng này!",
+                                              "Bạn có chắc chắn muốn xóa bài đăng này ?",
                                           onAccept: () {
                                         context
                                             .read<CreatePostScreenCubit>()

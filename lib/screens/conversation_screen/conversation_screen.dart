@@ -7,7 +7,7 @@ class ConversationScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Center(
-      child: AppText("Hello from conversation screen"),
+      child: AppText("Welcome to the conversation screen !"),
     );
   }
 }
