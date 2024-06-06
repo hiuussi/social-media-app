@@ -22,17 +22,19 @@ class ConnectToServerScreenCubit extends Cubit<ConnectToServerScreenState> {
   void resetErrorMessage() => emit(state.copyWith(errorMessage: null));
 
   Future confirmBaseUrl() async {
-    if (state.baseUrl != null && state.baseUrl!.contains("http://") ||
-        state.baseUrl != null && state.baseUrl!.contains("https://")) {
+    // if (state.baseUrl != null && state.baseUrl!.contains("http://") ||
+    //     state.baseUrl != null && state.baseUrl!.contains("http://")) {
+    String? baseUrl = "${state.baseUrl}/api/auth/check-connection";
+    print(baseUrl);
       final cancel = showLoading();
-      try {
+      try {  
         http.Response? res = await http
             .get(Uri.parse("${state.baseUrl!}/api/auth/check-connection"))
             .timeout(
           const Duration(seconds: 30),
           onTimeout: () {
             emit(state);
-            throw "Không thể kết nối đến máy chủ !";
+            throw "Không thể kết nối đén máy chủ!";
           },
         );
         Map<String, dynamic> data = jsonDecode(res.body);
@@ -42,9 +44,9 @@ class ConnectToServerScreenCubit extends Cubit<ConnectToServerScreenState> {
         cancel();
         emit(state.copyWith(errorMessage: e.toString(), isConfirmed: false));
       }
-    } else {
-      emit(state.copyWith(errorMessage: "Định dạng URL không chính xác, vui lòng kiểm tra lại !"));
-    }
+    // } else {
+    //   emit(state.copyWith(errorMessage: "Định dạng url không chính xác"));
+    // }
   }
 
   Future<User?> checkToken() async {
