@@ -91,7 +91,7 @@ class _CommentScreenState extends State<CommentScreen> {
                               status: ScreenStatus.loading,
                               currentComment: null));
                       showSuccessBanner(
-                          content: "Bình luận thành công!",
+                          content: "Đã tải bình luận thành công!",
                           delayDurationInMilliseconds: 100);
                     }
                   }),
@@ -137,7 +137,7 @@ class _CommentScreenState extends State<CommentScreen> {
                               ? Align(
                                   alignment: Alignment.centerLeft,
                                   child: AppText(
-                                      "Bạn đã đính kèm ${files.length} tệp",
+                                      "Đã đính kèm ${files.length} tệp",
                                       padding: const EdgeInsets.symmetric(
                                           horizontal: 16, vertical: 8)))
                               : const SizedBox.shrink();
@@ -146,7 +146,7 @@ class _CommentScreenState extends State<CommentScreen> {
                       AppTextField(
                         focusNode: _focusNode,
                         controller: textController,
-                        placeholder: "Nhập bình luận của bạn tại đây...",
+                        placeholder: "Nhập bình luận tại đây...",
                         maxLines: 2,
                         prefixIcon: Wrap(
                           alignment: WrapAlignment.center,
