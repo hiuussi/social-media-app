@@ -100,7 +100,7 @@ class LoginScreen extends StatelessWidget {
                               AppButton(
                                   title: "Đăng nhập",
                                   width: MediaQuery.of(context).size.width,
-                                  color: Colors.green,
+                                  color: Colors.orange,
                                   borderRadius: 4,
                                   onPressed: () {
                                     if (_formKey.currentState != null &&
@@ -110,7 +110,7 @@ class LoginScreen extends StatelessWidget {
                                   }),
                               Align(
                                 alignment: Alignment.centerRight,
-                                child: AppText('Quên mật khẩu?',
+                                child: AppText('Quên mật khẩu ?',
                                     textAlign: TextAlign.right),
                               ),
                             ],
@@ -172,7 +172,7 @@ class LoginScreen extends StatelessWidget {
                               crossAxisAlignment: CrossAxisAlignment.center,
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: [
-                                Text('Bạn chưa có tài khoản? '),
+                                Text('Bạn chưa có tài khoản ? '),
                                 GestureDetector(
                                   onTap: () => Get.toNamed(Routes.register),
                                   child: AppText('Đăng ký',
