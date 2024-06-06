@@ -78,7 +78,7 @@ class ConnectToServerScreen extends StatelessWidget {
               return AppLayout(
                 leading: const SizedBox.shrink(),
                 resizeToAvoidBottomInset: true,
-                title: "Kết nối đến hệ thống".toUpperCase(),
+                title: "Kết nối đến hệ thống.".toUpperCase(),
                 child: Padding(
                   padding: const EdgeInsets.all(16.0),
                   child: SingleChildScrollView(
@@ -90,13 +90,13 @@ class ConnectToServerScreen extends StatelessWidget {
                         Assets.icons.pcFetchApi
                             .svg(width: MediaQuery.of(context).size.width),
                         AppText(
-                          "Vì sản phẩm đang trong giai đoạn phát triển. Để có thể sử dụng các dịch vụ, vui lòng nhập địa chỉ liên kết đến máy chủ ở bên dưới.",
+                          "Sản phẩm đang trong giai đoạn phát triển. Để có thể sử dụng các dịch vụ, vui lòng nhập địa chỉ liên kết đến máy chủ bên dưới.",
                           textAlign: TextAlign.justify,
                           color: AppColors.titleText,
                           fontSize: 16,
                         ),
                         AppTextField(
-                          placeholder: "Nhập địa chỉ url của bạn tại đây",
+                          placeholder: "Nhập địa chỉ URL của bạn tại đây.",
                           controller: _textController,
                           initValue: "https://4rmv3lht-8080.asse.devtunnels.ms",
                           onChanged: context
