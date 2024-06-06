@@ -45,9 +45,9 @@ class ChatBotScreen extends StatelessWidget {
                       builder: (_) {
                         return Center(
                           child: AlertDialog(
-                            surfaceTintColor: Colors.green,
+                            surfaceTintColor: const Color(0xFF5C936B),
                             alignment: Alignment.centerLeft,
-                            title: const Text("エラー"),
+                            title: const Text("ERROR"),
                             content: Text("${state.errorMessage}"),
                             actions: [
                               ElevatedButton(
@@ -59,7 +59,7 @@ class ChatBotScreen extends StatelessWidget {
                                         .resetErrorMessage();
                                     Navigator.of(_).pop();
                                   },
-                                  child: const Text("近い"))
+                                  child: const Text("CLOSE"))
                             ],
                           ),
                         );
@@ -169,7 +169,7 @@ class ChatBotScreen extends StatelessWidget {
                 if (!state.isRecognizing) {
                   // Stop recorder
                   if (context.read<RecorderCubit>().state.isListening) {
-                    print("stop recorder");
+                    print("STOP RECORDER");
                     context.read<RecorderCubit>().stopRecorder();
                   }
 
@@ -335,7 +335,7 @@ class ChatBotScreen extends StatelessWidget {
                               ),
                             )),
                       BottomMicWidget(
-                          backgroundColor: const Color(0xFF08875D),
+                          backgroundColor: const Color(0xFF5C936B),
                           iconColor: Colors.white,
                           onMic: () => context.read<RecorderCubit>().record(),
                           onStop: () =>
