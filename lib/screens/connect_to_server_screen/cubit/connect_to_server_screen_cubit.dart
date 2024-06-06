@@ -32,7 +32,7 @@ class ConnectToServerScreenCubit extends Cubit<ConnectToServerScreenState> {
           const Duration(seconds: 30),
           onTimeout: () {
             emit(state);
-            throw "Không thể kết nối đén máy chủ!";
+            throw "Không thể kết nối đến máy chủ !";
           },
         );
         Map<String, dynamic> data = jsonDecode(res.body);
@@ -43,7 +43,7 @@ class ConnectToServerScreenCubit extends Cubit<ConnectToServerScreenState> {
         emit(state.copyWith(errorMessage: e.toString(), isConfirmed: false));
       }
     } else {
-      emit(state.copyWith(errorMessage: "Định dạng url không chính xác"));
+      emit(state.copyWith(errorMessage: "Định dạng URL không chính xác, vui lòng kiểm tra lại !"));
     }
   }
 
