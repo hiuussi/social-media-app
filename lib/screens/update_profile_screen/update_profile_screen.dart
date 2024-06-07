@@ -65,7 +65,7 @@ class _UpdateProfileScreenState extends State<UpdateProfileScreen> {
                           .updateState((p0) => p0.copyWith(user: res.data));
                     Get.back();
                     showSuccessBanner(
-                        content: "Cập nhật hồ sơ thành công!",
+                        content: "Cập nhật hồ sơ thành công !",
                         delayDurationInMilliseconds: 100);
                   });
                 }
@@ -120,7 +120,7 @@ class _UpdateProfileScreenState extends State<UpdateProfileScreen> {
                                                 initValue: profile?.firstname,
                                                 radius: 4,
                                                 isRequired: false,
-                                                placeholder: "Nhập họ",
+                                                placeholder: "Nhập họ của bạn",
                                                 onchanged: (_) {
                                                   context
                                                       .read<
@@ -144,7 +144,7 @@ class _UpdateProfileScreenState extends State<UpdateProfileScreen> {
                                                 initValue: profile?.lastname,
                                                 label: "Tên",
                                                 isRequired: false,
-                                                placeholder: "Nhập tên",
+                                                placeholder: "Nhập tên của bạn",
                                                 onchanged: (_) {
                                                   context
                                                       .read<
@@ -165,7 +165,7 @@ class _UpdateProfileScreenState extends State<UpdateProfileScreen> {
                                         ],
                                         textInputType: TextInputType.phone,
                                         radius: 4,
-                                        placeholder: "Nhập số điện thoại",
+                                        placeholder: "Nhập số điện thoại của bạn",
                                         onchanged: (_) {
                                           context
                                               .read<UpdateProfileScreenCubit>()
@@ -202,7 +202,7 @@ class _UpdateProfileScreenState extends State<UpdateProfileScreen> {
                                                         (p0) => p0.copyWith(
                                                             dateOfBirth: DateTimeUtils
                                                                 .convertToMilliseconds(
-                                                                    "dd/MM/yyyy",
+                                                                    "DD/MM/YYYY",
                                                                     _)));
                                               });
                                         },
@@ -220,7 +220,7 @@ class _UpdateProfileScreenState extends State<UpdateProfileScreen> {
                                             label: "Giới tính",
                                             icon: Icon(
                                               Icons.arrow_drop_down_outlined,
-                                              color: AppColors.darkgreen,
+                                              color: const Color(0xFF5C936B),
                                               size: 33,
                                             ),
                                             borderColor: AppColors.grey,
@@ -272,7 +272,8 @@ class _UpdateProfileScreenState extends State<UpdateProfileScreen> {
                                                         color: state.currentProfile
                                                                     ?.gender ==
                                                                 e
-                                                            ? AppColors.green
+                                                            ? const Color(
+                                                            0xFF94CCA4)
                                                             : AppColors.black,
                                                       )))
                                                   .toList(),
