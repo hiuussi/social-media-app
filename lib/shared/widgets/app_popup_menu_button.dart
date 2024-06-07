@@ -75,7 +75,7 @@ class AppPopUpMenuButton<T> extends StatelessWidget {
                 padding: const EdgeInsets.fromLTRB(12, 8, 4, 8),
                 child: const Icon(
                   Icons.expand_more,
-                  color: AppColors.darkgreen,
+                  color: AppColors.orange,
                   size: 24,
                 ),
               )),
