@@ -6,7 +6,7 @@ import 'fade_in_out.dart';
 class LoadingAnimation extends StatelessWidget {
   final Color color;
 
-  const LoadingAnimation({Key? key, this.color = AppColors.green})
+  const LoadingAnimation({Key? key, this.color = AppColors.blue})
       : super(key: key);
   @override
   Widget build(BuildContext context) {
