@@ -128,7 +128,7 @@ class _AppListState<T> extends State<AppList<T>> {
                   ///
                   else if (sources == null)
                     const Center(
-                        child: LoadingAnimation(color: AppColors.darkgreen))
+                        child: LoadingAnimation(color: AppColors.bgBlue))
 
                   ///
                   /// Sources empty
