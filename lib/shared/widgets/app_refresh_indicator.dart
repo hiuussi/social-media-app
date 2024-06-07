@@ -8,7 +8,7 @@ class AppRefreshIndicator extends StatelessWidget {
     required this.child,
     required this.onRefresh,
     this.backgroundColor = AppColors.white,
-    this.color = AppColors.green,
+    this.color = AppColors.bgBlue,
   });
   final Future<void> Function() onRefresh;
   final Widget child;
