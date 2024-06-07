@@ -180,7 +180,7 @@ class RegisterScreen extends StatelessWidget {
                                         title: "Đăng ký",
                                         width:
                                             MediaQuery.of(context).size.width,
-                                        color: Colors.green,
+                                        color: Colors.orange,
                                         borderRadius: 4,
                                         onPressed: () {
                                           if (_formKey.currentState != null &&
@@ -247,11 +247,11 @@ class RegisterScreen extends StatelessWidget {
                                   crossAxisAlignment: CrossAxisAlignment.center,
                                   mainAxisAlignment: MainAxisAlignment.center,
                                   children: [
-                                    Text('Bạn đã có tài khoản? '),
+                                    Text('Bạn đã có tài khoản ? '),
                                     GestureDetector(
                                       onTap: () => Get.toNamed(Routes.login),
                                       child: AppText('Đăng nhập',
-                                          color: AppColors.darkgreen,
+                                          color: AppColors.bgBlue,
                                           decoration: TextDecoration.underline),
                                     ),
                                   ],
