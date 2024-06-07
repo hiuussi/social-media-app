@@ -39,7 +39,7 @@ class AppDatePicker extends StatefulWidget {
       this.initialDate,
       this.firstDate,
       this.lastDate,
-      this.primaryDialogColor = AppColors.darkgreen,
+      this.primaryDialogColor = AppColors.bgOrange,
       this.value,
       this.readOnly = false,
       required this.onChanged,
@@ -89,7 +89,7 @@ class _AppDatePickerState extends State<AppDatePicker> {
             color: AppColors.transparent,
             padding: const EdgeInsets.all(5),
             margin: const EdgeInsets.only(right: 8),
-            child: Assets.icons.icCalendar.svg(color: AppColors.darkgreen)),
+            child: Assets.icons.icCalendar.svg(color: AppColors.bgBlue)),
         onChanged: (_) {},
         onTap: () async {
           if (!widget.readOnly) {
