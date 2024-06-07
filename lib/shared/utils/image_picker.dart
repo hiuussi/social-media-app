@@ -21,7 +21,7 @@ class ImagePickerUtils {
         showErrorDialog(context,
             title: "Không có quyền truy cập",
             content:
-                "Ứng dụng không có quyền truy cập vào máy ảnh của bạn. Nếu bạn muốn sử dụng máy ảnh, vui lòng cấp quyền!");
+                "Hãy cấp quyền sử dụng máy ảnh cho ứng dụng để tiếp tục!");
       }
     }
     return null;
@@ -40,7 +40,7 @@ class ImagePickerUtils {
         showErrorDialog(context,
             title: "Không có quyền truy cập",
             content:
-                "Ứng dụng không có quyền truy cập vào máy ảnh của bạn. Nếu bạn muốn sử dụng máy ảnh, vui lòng cấp quyền!");
+                "Hãy cấp quyền sử dụng máy ảnh cho ứng dụng để tiếp tục!");
       }
     }
 
