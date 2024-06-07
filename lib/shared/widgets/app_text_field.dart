@@ -194,7 +194,7 @@ class _AppTextFieldState extends State<AppTextField> {
                                   color: widget.errorLabel != null
                                       ? AppColors.red
                                       : widget.focusBorderColor ??
-                                          AppColors.darkgreen))),
+                                          AppColors.bgOrange))),
               onChanged: (value) {
                 widget.onChanged?.call(value);
               },
@@ -207,7 +207,7 @@ class _AppTextFieldState extends State<AppTextField> {
               onTap: widget.onTap,
               obscureText: obscureText,
               showCursor: widget.showCursor,
-              cursorColor: AppColors.darkgreen,
+              cursorColor: AppColors.orange,
               minLines: widget.minLines,
               maxLines: widget.obscureText ? 1 : widget.maxLines,
             ),
