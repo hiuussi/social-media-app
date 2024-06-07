@@ -14,7 +14,7 @@ Future<dynamic> showFeaturePending(BuildContext context) => showDialog(
             child: SuccessDialogWidget(
                 title: "Thông báo",
                 content:
-                    "Vì tính năng này đang được hệ thống cập nhật nên bây giờ bạn không thể sử dụng được!"),
+                    "Tính năng đang được cập nhật, vui lòng quay lại sau!"),
           ),
         );
       },
@@ -76,7 +76,7 @@ class ErrorDialogWidget extends StatelessWidget {
         ),
         const SizedBox(height: 16),
         AppButton(
-          color: AppColors.green,
+          color: AppColors.blue,
           title: tr(LocaleKeys.App_Close),
           onPressed: () {
             Navigator.of(context).pop();
@@ -128,7 +128,7 @@ class ConfirmDialogWidget extends StatelessWidget {
       child: Column(mainAxisSize: MainAxisSize.min, children: [
         const Icon(
           Icons.check_circle_outline_outlined,
-          color: Colors.green,
+          color: Colors.orange,
           size: 55,
         ),
         const SizedBox(height: 8),
@@ -136,7 +136,7 @@ class ConfirmDialogWidget extends StatelessWidget {
           title ?? tr(LocaleKeys.App_Confirm),
           textAlign: TextAlign.center,
           style: const TextStyle(
-            color: Colors.green,
+            color: Colors.lightBlueAccent,
             fontWeight: FontWeight.w600,
             fontSize: 20,
           ),
@@ -157,9 +157,9 @@ class ConfirmDialogWidget extends StatelessWidget {
             Expanded(
               child: AppButton(
                 color: AppColors.white,
-                borderColor: AppColors.green,
+                borderColor: AppColors.blue,
                 title: tr(LocaleKeys.App_Cancel),
-                titleColor: AppColors.green,
+                titleColor: AppColors.blue,
                 onPressed: () {
                   Navigator.of(context).pop(false);
                   onReject?.call();
@@ -169,7 +169,7 @@ class ConfirmDialogWidget extends StatelessWidget {
             const SizedBox(width: 8),
             Expanded(
               child: AppButton(
-                color: AppColors.green,
+                color: AppColors.blue,
                 title: tr(LocaleKeys.App_Ok),
                 onPressed: () {
                   Navigator.of(context).pop(true);
@@ -217,14 +217,14 @@ class SuccessDialogWidget extends StatelessWidget {
       child: Column(mainAxisSize: MainAxisSize.min, children: [
         const Icon(
           Icons.check_circle_sharp,
-          color: Colors.green,
+          color: Colors.orange,
           size: 55,
         ),
         const SizedBox(height: 8),
         Text(
           title ?? tr(LocaleKeys.App_Success),
           style: const TextStyle(
-            color: Colors.green,
+            color: Colors.blue,
             fontWeight: FontWeight.w600,
             fontSize: 20,
           ),
@@ -241,7 +241,7 @@ class SuccessDialogWidget extends StatelessWidget {
         ),
         const SizedBox(height: 16),
         AppButton(
-          color: AppColors.green,
+          color: AppColors.blue,
           title: tr(LocaleKeys.App_Ok),
           onPressed: () {
             Navigator.of(context).pop();
