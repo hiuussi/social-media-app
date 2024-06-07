@@ -18,7 +18,7 @@ extension GenderExt on Gender? {
       {
         Gender.MALE: "Nam",
         Gender.FEMALE: "Nữ",
-        Gender.OTHER: "Giới tính khác",
+        Gender.OTHER: "Khác",
       }[this] ??
       tr(LocaleKeys.App_NotUpdate);
 
