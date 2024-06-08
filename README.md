@@ -1,5 +1,4 @@
-# social_media_with_chatgpt
-
+# social_medi_app
 A new Flutter project.
 
 ## Getting Started
